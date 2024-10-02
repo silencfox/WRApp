@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WRapi", "WRapi\WRapi.csproj", "{A600BA8B-880E-4E4D-B181-F56862C7C6E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WRApi", "WRApi\WRApi.csproj", "{8CFFBE94-DDFF-4F7F-BE7B-EE0CE85F6513}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A600BA8B-880E-4E4D-B181-F56862C7C6E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A600BA8B-880E-4E4D-B181-F56862C7C6E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A600BA8B-880E-4E4D-B181-F56862C7C6E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A600BA8B-880E-4E4D-B181-F56862C7C6E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CFFBE94-DDFF-4F7F-BE7B-EE0CE85F6513}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CFFBE94-DDFF-4F7F-BE7B-EE0CE85F6513}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CFFBE94-DDFF-4F7F-BE7B-EE0CE85F6513}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CFFBE94-DDFF-4F7F-BE7B-EE0CE85F6513}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C3DE7046-220F-4392-9469-F00E873CDBDB}
+		SolutionGuid = {8C271612-ADBC-400B-907F-9D7B30E3DDF2}
 	EndGlobalSection
 EndGlobal

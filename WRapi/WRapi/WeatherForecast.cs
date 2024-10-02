@@ -1,4 +1,4 @@
-namespace WRapi
+namespace WRApi
 {
     public class WeatherForecast
     {

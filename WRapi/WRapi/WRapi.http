@@ -1,6 +1,6 @@
-@WRapi_HostAddress = http://localhost:5253
+@WRApi_HostAddress = http://localhost:5284
 
-GET {{WRapi_HostAddress}}/weatherforecast/
+GET {{WRApi_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###

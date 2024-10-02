@@ -1,5 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using WRApi.Data;
 
-namespace WRapi
+namespace WRApi
 {
     public class Program
     {
@@ -14,6 +16,8 @@ namespace WRapi
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
