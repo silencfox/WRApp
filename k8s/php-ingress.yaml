@@ -20,7 +20,7 @@ spec:
           service:
             name: php-service
             port:
-              number: 80
+              number: 30080
   tls:
   - hosts:
     - phpwr.kdvops.com
@@ -48,7 +48,7 @@ spec:
           service:
             name: phpmyadmin
             port:
-              number: 80
+              number: 30081
   tls:
   - hosts:
     - phpmyadminwr.kdvops.com
