@@ -47,6 +47,9 @@ spec:
   type: NodePort
   selector:
     app: php-app
+  externalIPs:
+    - 10.0.0.16
+    - 10.0.0.20
   ports:
     - port: 80
       targetPort: 80
