@@ -1,0 +1,55 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: php-app
+  namespace: wr
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: php.wr.kdvops.com
+    external-dns.alpha.kubernetes.io/ttl: "120"
+    external-dns.alpha.kubernetes.io/target: "silencfox.duckdns.org"
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  ingressClassName: traefik
+  rules:
+  - host: php.wr.kdvops.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: php-service
+            port:
+              number: 80
+  tls:
+  - hosts:
+    - php.wr.kdvops.com
+    secretName: php-wr-kdvops-com-tls
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: phpmyadmin
+  namespace: wr
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: phpmyadmin.wr.kdvops.com
+    external-dns.alpha.kubernetes.io/ttl: "120"
+    external-dns.alpha.kubernetes.io/target: "silencfox.duckdns.org"
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  ingressClassName: traefik
+  rules:
+  - host: phpmyadmin.wr.kdvops.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: phpmyadmin
+            port:
+              number: 80
+  tls:
+  - hosts:
+    - phpmyadmin.wr.kdvops.com
+    secretName: phpmyadmin-wr-kdvops-com-tls
