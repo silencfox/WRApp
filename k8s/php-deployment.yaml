@@ -22,7 +22,7 @@ spec:
             - containerPort: 80
           env:
             - name: DB_HOST
-              value: mysql.webapp.svc.cluster.local
+              value: mysql.wr.svc.cluster.local
             - name: DB_NAME
               value: appdb
             - name: DB_USER

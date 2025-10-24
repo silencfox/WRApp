@@ -20,7 +20,7 @@ spec:
           image: phpmyadmin:latest
           env:
             - name: PMA_HOST
-              value: mysql.webapp.svc.cluster.local
+              value: mysql.wr.svc.cluster.local
             - name: PMA_USER
               value: appuser
             - name: PMA_PASSWORD
